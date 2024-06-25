@@ -1,0 +1,33 @@
+{
+  "name": "simple-coin-optimizer",
+  "version": "1.0.0",
+  "description": "A tool to optimize the profitability of upgrades in the Simple Coin clicker game.",
+  "main": "main.js",
+  "scripts": {
+    "compile": "tsc --outDir ./js main.ts",
+    "run": "node ./js/main.js",
+    "start": "npm run compile && npm run run",
+    "cph": "GAIN_TYPE='coins_per_hour' npm run start",
+    "tl": "GAIN_TYPE='tap_limit' npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Unsleeping/simple-coin-optimizer"
+  },
+  "keywords": [
+    "clicker",
+    "game",
+    "optimizer",
+    "Simple Coin",
+    "profit"
+  ],
+  "author": "unsleeping",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Unsleeping/simple-coin-optimizer/issues"
+  },
+  "homepage": "https://github.com/Unsleeping/simple-coin-optimizer#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.8"
+  }
+}
